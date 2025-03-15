@@ -22,4 +22,4 @@ This is a simple web-based Etch-a-Sketch application built as part of the Odin P
 
 ## Access on the Web
 
-Click on this link to view the webpage on your broswer: http://127.0.0.1:3000/index.html
+Click on this link to view the webpage on your broswer: https://aadils29.github.io/odin-sketch/
