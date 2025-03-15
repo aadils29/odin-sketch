@@ -30,5 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const newGridButton = document.querySelector("#reset");
 newGridButton.addEventListener("click", () => {
   const newSideLength = prompt("Enter the new grid side length:");
+  if (newSideLength > 100) {
+    alert("The maximum side length is 100.");
+    return;
+  }
   generateGrid(newSideLength);
 });
