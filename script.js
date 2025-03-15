@@ -26,3 +26,9 @@ function generateGrid(sideLength) {
 document.addEventListener("DOMContentLoaded", () => {
   generateGrid(16);
 });
+
+const newGridButton = document.querySelector("#reset");
+newGridButton.addEventListener("click", () => {
+  const newSideLength = prompt("Enter the new grid side length:");
+  generateGrid(newSideLength);
+});
