@@ -13,6 +13,14 @@ function generateGrid(sideLength) {
     cell.style.height = `${cellSize}px`;
     container.appendChild(cell);
   }
+
+  const hoverColor = "red";
+  const cells = document.querySelectorAll(".cell");
+  cells.forEach((cell) => {
+    cell.addEventListener("mouseover", () => {
+      cell.style.backgroundColor = hoverColor;
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
