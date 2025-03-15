@@ -1,6 +1,6 @@
 # Odin Sketch
 
-Odin Sketch is a simple web-based Etch-a-Sketch application built as part of the Odin Project curriculum. Users can draw on a grid by hovering over the cells, which change color randomly.
+This is a simple web-based Etch-a-Sketch application built as part of the Odin Project curriculum. Users can draw on a grid by hovering over the cells, which change color randomly.
 
 ## Features
 
