@@ -1,3 +1,5 @@
+let hoverEffectEnabled = true;
+
 function generateGrid(sideLength) {
   const container = document.querySelector(".grid");
   while (container.firstChild) {
@@ -14,10 +16,16 @@ function generateGrid(sideLength) {
     container.appendChild(cell);
   }
 
+  addCellEventListeners();
+}
+
+function addCellEventListeners() {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
     cell.addEventListener("mouseover", () => {
-      cell.style.backgroundColor = getRandomColor();
+      if (hoverEffectEnabled) {
+        cell.style.backgroundColor = getRandomColor();
+      }
     });
   });
 }
@@ -54,3 +62,9 @@ newGridButton.addEventListener("click", () => {
 
 const clearGridButton = document.querySelector("#clear");
 clearGridButton.addEventListener("click", clearGrid);
+
+document.addEventListener("keydown", (event) => {
+  if (event.key.toLowerCase() === "q") {
+    hoverEffectEnabled = !hoverEffectEnabled;
+  }
+});

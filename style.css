@@ -18,10 +18,20 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+.container {
+  text-align: center;
+}
+
+.hover-toggle-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .button-container button {
