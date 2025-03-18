@@ -31,6 +31,13 @@ function getRandomColor() {
   return color;
 }
 
+function clearGrid() {
+  const cells = document.querySelectorAll(".cell");
+  cells.forEach((cell) => {
+    cell.style.backgroundColor = "";
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   generateGrid(16);
 });
@@ -44,3 +51,6 @@ newGridButton.addEventListener("click", () => {
   }
   generateGrid(newSideLength);
 });
+
+const clearGridButton = document.querySelector("#clear");
+clearGridButton.addEventListener("click", clearGrid);
